@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import css from "./TransactionHistory.module.css";
 const TransactionHistory = ({ items }) => {
-  console.log(items);
   return (
     <table className={clsx(css.table)}>
       <thead className={clsx(css.head)}>
