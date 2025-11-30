@@ -15,7 +15,9 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
           <tr key={id} className={clsx(css.row)}>
-            <td className={clsx(css.cell)}>{type}</td>
+            <td className={clsx(css.cell)}>
+              {type[0].toUpperCase() + type.slice(1)}
+            </td>
             <td className={clsx(css.cell)}>{amount}</td>
             <td className={clsx(css.cell)}>{currency}</td>
           </tr>
